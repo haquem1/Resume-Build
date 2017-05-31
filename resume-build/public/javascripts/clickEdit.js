@@ -1,11 +1,11 @@
-var defaultText = 'Click and enter text';
-
 function endEdit(e) {
     var input = $(e.target),
         label = input && input.prev();
 
-    label.text(input.val() === '' ? defaultText : input.val());
-    if (input.val() !== '') input.attr('placeholder', input.val());
+    if (input.val() !== '') {
+      label.text(input.val());
+      input.attr('placeholder', input.val());
+    }
     input.hide();
     label.show();
 }

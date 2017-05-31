@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Resume</title>
+    <title>Your First Resume</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
@@ -31,9 +31,9 @@
     <div id="cv" class="instaFade">
         <div class="mainDetails">
             <div id="name">
-                <h1 class="quickFade delayTwo"><label>Name Here</label></h1>
+                <h1><label>Full Name</label></h1>
                 <input class="form-control clickedit" type="text" placeholder="Name Here" />
-                <h2 class="quickFade delayThree"><label>email@domain.com | phone</label></h2>
+                <h2><label>email@domain.com | phone</label></h2>
                 <input class="form-control clickedit" type="text" placeholder="email@domain.com | phone" />
             </div>
 
@@ -43,69 +43,81 @@
         <div id="mainArea" class="quickFade delayFive">
 
             <section>
-                <div class="sectionTitle">
+                <div class="sectionTitle item">
                     <h1>Education</h1>
+                    <a href="#" class="add-remove add">+ Add Education</a>
                 </div>
 
-                <div class="sectionContent">
-                    <article>
-                        <h2>College/University</h2>
-                        <p class="subDetails">Qualification</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
+                <div class="sectionContent education">
+                    <article class="item-main">
+                        <h2><label>College/University </label></h2>
+                        <input class="form-control clickedit" type="text" placeholder="College/University" />
+                        <p class="subDetails"><label>[GPA optional; list if over 3.0] Degree Year (or Exp. Year) </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="[GPA optional; list if over 3.0] Degree Year (or Exp. Year)" />
+                        <p class="clear item"><u>Relevant Coursework</u> <a href="#" class="add-remove add course">+ Add</a>
+                          <ul class="keySkills">
+                            <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
+                            <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
+                            <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
+                          </ul>
+                        </p>
+                        <p class="item"><u>Awards and Activites </u> <a href="#" class="add-remove add">+ Add</a>
+                          <ul class="keySkills">
+                            <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+                            <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+                            <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+                          </ul>
+                        </p>
+                        <a href="#" class="add-remove-main remove">- Remove Education </a>
                     </article>
 
-                    <article>
-                        <h2>College/University</h2>
-                        <p class="subDetails">Qualification</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>
-                    </article>
                 </div>
                 <div class="clear"></div>
             </section>
 
             <section>
-                <div class="sectionTitle">
-                    <h1>Work Experience</h1>
+                <div class="sectionTitle item">
+                    <h1>Experience</h1>
+                    <a href="#" class="add-remove add">+ Add Experience</a>
                 </div>
 
-                <div class="sectionContent">
-                    <article>
-                        <h2>Job Title at Company</h2>
-                        <p class="subDetails">April 2011 - Present</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+                <div class="sectionContent experience">
+                    <article class="item">
+                        <h2><label>Job Title at Company </label></h2>
+                        <input class="form-control clickedit" type="text" placeholder="College/University" />
+                        <p class="subDetails"><label>Dates Worked </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="Dates Worked" />
+                        <p><label>Job Description/Accomplishments; Complete sentences make entry-level resumes stand out </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="Job Description/Accomplishments; Complete sentences make entry-level resumes stand out" />
+                        <a href="#" class="add-remove remove">- Remove Work</a>
                     </article>
 
-                    <article>
-                        <h2>Job Title at Company</h2>
-                        <p class="subDetails">Janruary 2007 - March 2011</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+                    <article class="item">
+                        <h2><label>Job Title at Company </label></h2>
+                        <input class="form-control clickedit" type="text" placeholder="College/University" />
+                        <p class="subDetails"><label>Dates Worked </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="Dates Worked" />
+                        <p><label>Job Description/Accomplishments; Complete sentences make entry-level resumes stand out </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="Job Description/Accomplishments; Complete sentences make entry-level resumes stand out" />
+                        <a href="#" class="add-remove remove">- Remove Work</a>
                     </article>
 
-                    <article>
-                        <h2>Job Title at Company</h2>
-                        <p class="subDetails">October 2004 - December 2006</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
-                    </article>
                 </div>
                 <div class="clear"></div>
             </section>
 
 
             <section>
-                <div class="sectionTitle">
+                <div class="sectionTitle item">
                     <h1>Key Skills</h1>
+                    <a href="#" class="add-remove add">+ Add Skill</a>
                 </div>
 
-                <div class="sectionContent">
+                <div class="sectionContent skill">
                     <ul class="keySkills">
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
-                        <li>A Key Skill</li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove add">+ </a> <a href="#" class="add-remove remove">- </a></li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove add">+ </a> <a href="#" class="add-remove remove">- </a></li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove add">+ </a> <a href="#" class="add-remove remove">- </a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -115,6 +127,7 @@
     </div>
 
     <script src="javascripts/clickEdit.js"></script>
+    <script src="javascripts/itemAddRemove.js"></script>
 </body>
 
 </html>
