@@ -28,6 +28,10 @@
 </head>
 
 <body>
+    <div class="hidden">
+      <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
+      <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+    </div>
     <div id="cv" class="instaFade">
         <div class="mainDetails">
             <div id="name">
@@ -49,26 +53,36 @@
                 </div>
 
                 <div class="sectionContent education">
-                    <article class="item-main">
+                    <article class="item-main education-container">
+                        <h2><label>College/University </label></h2>
+                        <input class="form-control clickedit" type="text" placeholder="College/University" />
+                        <p class="subDetails"><label>[GPA optional; list if over 3.0] Degree Year (or Exp. Year); Courses, activity/award only listed in 1st school--combine if needed</label></p>
+                        <input class="form-control clickedit" type="text" placeholder="[GPA optional; list if over 3.0] Degree Year (or Exp. Year)" />
+                        <a href="#" class="add-remove-main remove">- Remove Education </a>
+                    </article>
+                    <article class="item-main education-container">
                         <h2><label>College/University </label></h2>
                         <input class="form-control clickedit" type="text" placeholder="College/University" />
                         <p class="subDetails"><label>[GPA optional; list if over 3.0] Degree Year (or Exp. Year) </label></p>
                         <input class="form-control clickedit" type="text" placeholder="[GPA optional; list if over 3.0] Degree Year (or Exp. Year)" />
-                        <p class="clear item"><u>Relevant Coursework</u> <a href="#" class="add-remove add course">+ Add</a>
-                          <ul class="keySkills">
+                        <p class="clear item">
+                          <u>Relevant Coursework</u> <a href="#" class="add-remove add course">+ Add</a>
+                          <ul id="course-list" class="keySkills">
+                            <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
                             <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
                             <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
                             <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
                           </ul>
                         </p>
-                        <p class="item"><u>Awards and Activites </u> <a href="#" class="add-remove add">+ Add</a>
-                          <ul class="keySkills">
+                        <p class="item btm">
+                          <u>Awards and Activites</u> <a href="#" class="add-remove add activity-award">+ Add</a>
+                          <ul id="activity-award-list" class="keySkills">
+                            <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
                             <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
                             <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
                             <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
                           </ul>
                         </p>
-                        <a href="#" class="add-remove-main remove">- Remove Education </a>
                     </article>
 
                 </div>
@@ -102,6 +116,16 @@
                         <a href="#" class="add-remove remove">- Remove Work</a>
                     </article>
 
+                    <article class="item">
+                        <h2><label>Job Title at Company </label></h2>
+                        <input class="form-control clickedit" type="text" placeholder="College/University" />
+                        <p class="subDetails"><label>Dates Worked </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="Dates Worked" />
+                        <p><label>Job Description/Accomplishments; Complete sentences make entry-level resumes stand out </label></p>
+                        <input class="form-control clickedit" type="text" placeholder="Job Description/Accomplishments; Complete sentences make entry-level resumes stand out" />
+                        <a href="#" class="add-remove remove">- Remove Work</a>
+                    </article>
+
                 </div>
                 <div class="clear"></div>
             </section>
@@ -115,9 +139,10 @@
 
                 <div class="sectionContent skill">
                     <ul class="keySkills">
-                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove add">+ </a> <a href="#" class="add-remove remove">- </a></li>
-                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove add">+ </a> <a href="#" class="add-remove remove">- </a></li>
-                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove add">+ </a> <a href="#" class="add-remove remove">- </a></li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove remove">- Remove</a></li>
+                        <li class="item"><label>A Key Skill </label><input class="form-control clickedit" type="text" placeholder="A Key Skill" /><br><a href="#" class="add-remove remove">- Remove</a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>

@@ -359,7 +359,7 @@ section:last-child {
 }
 
 .input {
-	width: 100%;
+	width: 90%;
 }
 
 .add-remove,
@@ -385,4 +385,13 @@ a {
 
 label {
 	font-weight: inherit !important;
+}
+
+div.sectionContent article:nth-child(1),
+div.sectionContent li:nth-child(1){
+    display: none;
+}
+
+.hidden {
+	display: none;
 }

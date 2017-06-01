@@ -3,16 +3,16 @@ $(document).on("click", ".remove", function(e) { //user click on remove
     $(this).parent().fadeOut(300, function() { $(this).remove(); });
 });
 
-$(document).on("click", ".add-main", function(e) { //user click on add
+$(document).on("click", ".add", function(e) { //user click on add
     e.preventDefault();
-    alert('hell');
-    var section = $(this).parent().childNodes[0];
-    if (section.hasClass('education')) {
-      alert('hello');
-    } else if (section.hasClass('experience')) {
-
-    } else { //add skill
-
-    }
-    append();
+    var section = $(this).parent().parent().children('div:nth(1)');
+    section.children('article:nth(0)').clone().appendTo(section).hide().fadeIn(300);
+    if (section.hasClass('skill')) {
+      section.children('ul:nth(0)').children('li:nth(0)').clone().
+              appendTo(section.children('ul:nth(0)')).hide().fadeIn(300);
+   } else if ($(this).hasClass('course')) {
+     $('.hidden li:nth-child(1)').clone().appendTo('#course-list').hide().fadeIn(300);
+   } else if ($(this).hasClass('activity-award')) {
+     $('.hidden li:nth-child(2)').clone().appendTo('#activity-award-list').hide().fadeIn(300);
+   }
 });
