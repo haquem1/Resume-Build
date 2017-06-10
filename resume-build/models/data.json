@@ -1,0 +1,15 @@
+{
+  "name": "Fullname",
+  "email": "email",
+  "phone": "phone",
+  "school": "school",
+  "major": "major",
+  "course": "course",
+  "awards": "award",
+  "experience": {
+    "job": "job title",
+    "company": "company",
+    "dateWorked": "dates worked",
+    "desc": "desc"
+  }
+}

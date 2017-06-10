@@ -3,5 +3,8 @@ html
   head
     title #{name} Resume
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript' src='data.json')
+    script.
+      var data = JSON.parse('/data');
   body
     block content
