@@ -1,38 +1,34 @@
 $(function(){
-                $('#download-pdf').click(function(e){
-                    e.preventDefault();
-                    console.log('select_link clicked');
+    $('#download-pdf').click(function(e){
+        e.preventDefault();
+        console.log('select_link clicked');
 
-                     /*$.ajax({
-                        dataType: 'jsonp',
-                        data: "data=yeah",
-                        jsonp: 'callback',
-                        url: 'http://localhost:3000/endpoint?callback=?',
-                        success: function(data) {
-                            console.log('success');
-                            console.log(JSON.stringify(data));
-                        }
-                    });*/
-					var data = {};
-					data.title = "title";
-					data.message = "message";
+			  var data = {
+          name: "fullname",
+          email: "email",
+          phone: "phone",
+          school: "school",
+          major: "major",
+          course: "course",
+          awards: "award",
+          experience: {
+            job: "job title",
+            company: "company",
+            dateWorked: "dates worked",
+            desc: "desc"
+          }
+        };
 
-					$.ajax({
+
+				$.ajax({
 						type: 'POST',
 						data: JSON.stringify(data),
 				        contentType: 'application/json',
-                        url: 'http://localhost:3000/endpoint',
+                        url: '/makePDF',
                         success: function(data) {
                             console.log('success');
                             console.log(JSON.stringify(data));
                         }
                     });
-					/*$.ajax('http://localhost:3000/endpoint', {
-					        type: 'POST',
-					        data: JSON.stringify(data),
-					        contentType: 'application/json',
-					        success: function() { console.log('success');},
-					        error  : function() { console.log('error');}
-					});*/
                 });
             });

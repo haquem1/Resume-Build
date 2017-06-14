@@ -358,10 +358,6 @@ section:last-child {
 	margin-top: 1.5em;
 }
 
-.input {
-	width: 90%;
-}
-
 .add-remove,
 .add-remove-main {
 	visibility: hidden;
@@ -395,3 +391,6 @@ div.sectionContent li:nth-child(1){
 .hidden {
 	display: none;
 }
+ #download-pdf {
+	 padding: 1.2em;
+ }
