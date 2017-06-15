@@ -1,6 +1,6 @@
 ## Synopsis
 
-This is a POC of an online resume editor and workshop.
+This is a POC of an online resume editor and workshop. Server-side environment uses NodeJs and the Express framework.
 
 ## What Needs to be Done
 
