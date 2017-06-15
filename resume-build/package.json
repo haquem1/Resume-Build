@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -11,9 +12,7 @@
     "debug": "~2.6.0",
     "express": "~4.14.1",
     "html-pdf": "^2.1.0",
-    "html-template-pdf": "^0.1.1-0",
     "morgan": "~1.7.0",
-    "pdfkit": "^0.8.2",
     "pug": "^2.0.0-rc.1",
     "serve-favicon": "~2.3.2"
   },

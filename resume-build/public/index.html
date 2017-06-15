@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <form target="_blank" method="post" action="/makePDF">
     <div class="hidden">
       <li class="item"><label>Sample Course</label><input class="form-control clickedit" type="text" placeholder="Sample Course" /><br><a href="#" class="add-remove remove">- Remove </a></li>
       <li class="item"><label>Activity (Highest Position, Dates Involved) or Award (Month Year)</label><input class="form-control clickedit" type="text" placeholder="Activity (Highest Position, Dates Involved) or Award (Month Year)" /><br><a href="#" class="add-remove remove">- Remove</a></li>
@@ -36,7 +37,7 @@
                 <input class="form-control clickedit" type="text" placeholder="email@domain.com | phone" />
             </div>
 
-            <button id="download-pdf" type="button" class="pull-right btn btn-success" >Download PDF </button>
+            <a href="/pdf"><button id="download-pdf" type="submit" class="pull-right btn btn-success" >Download PDF </button></a>
 
             <div class="clear"></div>
         </div>
@@ -147,7 +148,7 @@
 
         </div>
     </div>
-
+  </form>
     <script src="javascripts/clickEdit.js"></script>
     <script src="javascripts/itemAddRemove.js"></script>
 
