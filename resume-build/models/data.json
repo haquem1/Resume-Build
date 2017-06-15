@@ -6,6 +6,9 @@
   "major": "major",
   "course": "course",
   "awards": "award",
+  "coursework": {
+    "course":"course"
+  },
   "experience": {
     "job": "job title",
     "company": "company",

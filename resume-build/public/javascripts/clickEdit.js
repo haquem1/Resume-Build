@@ -8,6 +8,7 @@ function endEdit(e) {
     }
     input.hide();
     label.show();
+
 }
 
 $('.clickedit').hide()
