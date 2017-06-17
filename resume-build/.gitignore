@@ -16,3 +16,4 @@ app/tests/coverage/
 .idea/
 coverage/
 .coveralls.yml
+tmp/

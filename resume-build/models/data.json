@@ -1,18 +1,1 @@
-{
-  "name": "fullname",
-  "email": "email",
-  "phone": "phone",
-  "school": "school",
-  "major": "major",
-  "course": "course",
-  "awards": "award",
-  "coursework": {
-    "course":"course"
-  },
-  "experience": {
-    "job": "job title",
-    "company": "company",
-    "dateWorked": "dates worked",
-    "desc": "desc"
-  }
-}
+{"name":"test","email":"email@domain.com | phone","phone":"phone","school":"school","major":"major","course":"course","awards":"award","coursework":{"course":"course"},"experience":{"job":"job title","company":"company","dateWorked":"dates worked","desc":"desc"}}
