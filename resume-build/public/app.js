@@ -1,6 +1,5 @@
 $(function(){
     $('#download-pdf').click(function(e){
-      e.preventDefault(); // for testing
         // ajax post here
         var data = createData();
         // on ajax success
@@ -46,7 +45,7 @@ function createData () {
       }
     } else if (k === 1) {
       for (i = 1; i < $('.experience article').length; i++) {
-        
+
         experience[i] = {};
         experience[i].job =  $('.experience').children(".job:eq("+ i +")").text();
         experience[i].company =  $('.experience').children(".company:eq("+ i +")").text();
