@@ -2,10 +2,11 @@ section
   div.sectionTitle
     h1 Key Skills
   div.sectionContent
-    ul.keySkills
-      li.col-sm-3 skill
-      li.col-sm-3 skill
-      li.col-sm-3 skill
-      li.col-sm-3 skill
-      li.col-sm-3 skill
+    ul.keySkills 
+      each skill in data.skills
+        li= skill
+        li= skill
+        li= skill
+        li= skill
+        li= skill
     div.clear

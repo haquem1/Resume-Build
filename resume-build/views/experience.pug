@@ -2,8 +2,9 @@ section
   div.sectionTitle
     h1 Work Experience
   div.pdfContent
-    article
-      h2 #{data.experience.job} at #{data.experience.company}
-      p.subDetails #{data.experience.dateWorked}
-      p #{data.experience.desc}
+    each entry in data.experience
+      article
+        h2 #{entry.job} at #{entry.company}
+        p.subDetails #{entry.dateWorked}
+        p #{entry.desc}
   div.clear

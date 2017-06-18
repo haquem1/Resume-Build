@@ -2,15 +2,18 @@ section
   div.sectionTitle
     h1 Education
   div.pdfContent
-    article
-      h2 #{data.school}
-      p.subDetails Major: #{data.major}
-      p 
-        u Coursework 
-        ul.keySkills
-          li #{data.courses}
-      p 
-        u Awards and Activity
-        ul.keySkills 
-          li #{data.awards}
+    each entry in data.education
+      article
+        h2 #{entry.school}
+        p.subDetails Major: #{entry.major}
+        p 
+          u Coursework 
+          ul.keySkills
+            each course in entry.coursework
+              li= course
+        p 
+          u Awards and Activity
+          ul.keySkills 
+            each award in entry.awards
+              li= award
   div.clear

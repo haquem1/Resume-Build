@@ -37,10 +37,10 @@ function createData () {
         education[i].awards = {};
 
         for (j = 1; j < $('#activity-award-list li').length; j++) {
-          education[i].coursework[j] = $('#activity-award-list').find("label:eq("+ j +")").text();
+          education[i].awards[j] = $('#activity-award-list').find("label:eq("+ j +")").text();
         }
         for (j = 1; j < $('#course-list li').length; j++) {
-          education[i].awards[j] = $('#course-list').find("label:eq("+ j +")").text();
+          education[i].coursework[j] = $('#course-list').find("label:eq("+ j +")").text();
         }
       }
     } else if (k === 1) {
