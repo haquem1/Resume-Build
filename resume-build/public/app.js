@@ -30,31 +30,31 @@ function createData () {
       for (i = 1; i < $('.education article').length; i++) {
 
         education[i] = {};
-        education[i].school =  $('.education').children(".school:eq("+ i +")").text();
-        education[i].major = $('.education').children(".major:eq("+ i +")").text();
+        education[i].school =  $('.education').find(".school:eq("+ i +")").text();
+        education[i].major = $('.education').find(".major:eq("+ i +")").text();
 
-        education[i].awards = {};
         education[i].coursework = {};
+        education[i].awards = {};
 
         for (j = 1; j < $('#activity-award-list li').length; j++) {
-          education[i].coursework[j] = $('#activity-award-list').children("label:eq("+ j +")").text();
+          education[i].coursework[j] = $('#activity-award-list').find("label:eq("+ j +")").text();
         }
         for (j = 1; j < $('#course-list li').length; j++) {
-          education[i].awards[j] = $('#course-list').children("label:eq("+ j +")").text();
+          education[i].awards[j] = $('#course-list').find("label:eq("+ j +")").text();
         }
       }
     } else if (k === 1) {
       for (i = 1; i < $('.experience article').length; i++) {
 
         experience[i] = {};
-        experience[i].job =  $('.experience').children(".job:eq("+ i +")").text();
-        experience[i].company =  $('.experience').children(".company:eq("+ i +")").text();
-        experience[i].dateWorked =  $('.experience').children(".dates:eq("+ i +")").text();
-        experience[i].desc =  $('.experience').children(".desc:eq("+ i +")").text();
+        experience[i].job =  $('.experience').find(".job:eq("+ i +")").text();
+        experience[i].company =  $('.experience').find(".company:eq("+ i +")").text();
+        experience[i].dateWorked =  $('.experience').find(".dates:eq("+ i +")").text();
+        experience[i].desc =  $('.experience').find(".desc:eq("+ i +")").text();
       }
     } else {
       for (i = 1; i < $('.skill li').length; i++) {
-        skills[i] =  $('.skill').children("label:eq("+ j +")").text();
+        skills[i] =  $('.skill').find("label:eq("+ j +")").text();
       }
     }
   }
