@@ -4,7 +4,7 @@ This is a POC of an online resume editor and workshop. Server-side environment u
 
 ## To Do
 
- **Most pressing issues:** Efficiently pass client-side data server-side. Styling of server-side PUG templates needed.
+ **Most pressing issues:** Styling of server-side PUG templates needed: columns not translating to PDF conversion
  <p>
  Addition of educating users of what makes a good resume before entering the builder is needed. Adding dynamic modals and popups can be implemented to help users edit a given template. Other resume templates can be added as well.
  </p>
