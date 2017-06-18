@@ -54,7 +54,7 @@ function createData () {
       }
     } else {
       for (i = 1; i < $('.skill li').length; i++) {
-        skills[i] =  $('.skill').find("label:eq("+ j +")").text();
+        skills[i] =  $('.skill-list').find("label:eq("+ i +")").text();
       }
     }
   }
