@@ -6,8 +6,10 @@ This is a POC of an online resume editor and workshop. Server-side environment u
 
  **Most pressing issues:** Styling of server-side PUG templates needed: columns not translating to PDF conversion
  <p>
- Addition of educating users of what makes a good resume before entering the builder is needed. Adding dynamic modals and popups can be implemented to help users edit a given template. Other resume templates can be added as well.
+Addition of educating users of what makes a good resume before entering the builder is needed. Adding dynamic modals and popups can be implemented to help users edit a given template. Other resume templates can be added as well.
  </p>
+
+*Suggested:* Use of Firebase's to store temporary variable data in PUG templates.
 
 ## Installation
 
